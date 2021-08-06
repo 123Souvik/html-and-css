@@ -1,0 +1,40 @@
+<DOCTYPE.html>
+		<html>
+		<head>
+	<script type="text/javascript">
+   	function validation()
+	{
+		var a=document.form.name.value;
+		if(a=="")
+		{
+			alert("plese Enter your Name");
+			document.form.name.focus();
+			return false;
+		}
+		if(!isNan(a))
+		{
+			alert("Plese Enter only characters");
+			document.form.name.select();
+			return false;
+		}
+
+	}
+		</script>
+		</head>
+				<body>
+				<form name="form"; method="post"; onsubmit="return validation()">
+				<tr>
+					<td> Your Name:</td>
+					<td><input type="text" name="name"> </td>
+				</tr>
+				<tr>
+					<td></td>
+				
+					<td><input type="Submit" name="sub" value="Submit"></td>
+				</tr>
+				</form>
+				</body>
+				</html>
+					
+					
+			
